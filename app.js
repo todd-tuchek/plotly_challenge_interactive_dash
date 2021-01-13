@@ -35,7 +35,7 @@ function getPlot(id) {
             y: OTU_id,
             text: labels,
             marker: {
-              color: 'rgb(142,124,195)'},
+              color: "purple"},
             type:"bar",
             orientation: "h",
         };
@@ -120,7 +120,7 @@ function getPlot(id) {
 // create the function to get the necessary data
 function getInfo(id) {
     // read the json file to get data
-    d3.json("Data/samples.json").then((data)=> {
+    d3.json("data/samples.json").then((data)=> {
         
         // get the metadata info for the demographic panel
         var metadata = data.metadata;
